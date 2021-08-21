@@ -11,16 +11,16 @@ function App() {
     setData(result.data[0]);
   }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="App">
       <h1>Hello There Mr.Atlanta</h1>
       <h1>Word generated: {data}</h1>
       <div class = "buttonOne">
-        <button type ="button_one" class = "button1"> Test </button>
+        <button type ="button_one" class = "button1" onClick={fetchData}> Test </button>
       </div>
     </div>
   );
