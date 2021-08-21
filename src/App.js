@@ -1,14 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
 function App() {
-  console.log("atlanta");
-  const name = "atlantas name";
+  const [data, setData] = useState([]);
+
+  const fetchData = async () => {
+    const result = await axios.get('https://random-word-form.herokuapp.com/random/noun');
+    setData(result.data[0]);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
       <h1>Hello There Mr.Atlanta</h1>
-      <p>Your name is {name}</p>
+      <h1>Word generated: {data}</h1>
     </div>
   );
 }
