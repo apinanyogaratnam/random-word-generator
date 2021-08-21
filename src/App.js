@@ -11,10 +11,6 @@ function App() {
     setData(result.data[0]);
   }
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
   return (
     <div className="App">
       <h1>Hello There Mr.Atlanta</h1>
