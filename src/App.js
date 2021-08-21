@@ -19,6 +19,9 @@ function App() {
     <div className="App">
       <h1>Hello There Mr.Atlanta</h1>
       <h1>Word generated: {data}</h1>
+      <div class = "buttonOne">
+        <button type ="button_one" class = "button1"> Test </button>
+      </div>
     </div>
   );
 }

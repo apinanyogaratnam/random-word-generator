@@ -28,6 +28,26 @@
   color: #61dafb;
 }
 
+.button1{
+  background-color: #822bff;
+  font-size: 24px;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  border: none;
+  font-family: Raleway;
+}
+
+.button1:hover{
+  background-color: #6200ee;
+}
+
+.button1:active {
+  background-color: #4e00be;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
